@@ -1,0 +1,24 @@
+{
+    "webPort": 8000,
+
+    "mongodbUrl": "mongodb://localhost:27017/pushserver",
+
+    "gcm": {
+        "apiKey": "YOUR_API_KEY_HERE"
+    },
+
+    "apn": {
+        "connection": {
+            "gateway": "gateway.sandbox.push.apple.com",
+            "cert": "/Users/harryng/Documents/workspace/node/pushserver/keys/cert.pem",
+            "key": "/Users/harryng/Documents/workspace/node/pushserver/keys/keys.pem"
+        },
+        "feedback": {
+            "address": "feedback.sandbox.push.apple.com",
+            "cert": "/Users/harryng/Documents/workspace/node/pushserver/keys/cert.pem",
+            "key": "/Users/harryng/Documents/workspace/node/pushserver/keys/keys.pem",
+            "interval": 43200,
+            "batchFeedback": true
+        }
+    }
+}
